@@ -1,14 +1,16 @@
 import React from "react";
 
 import CounterComponent from "./components/CounterComponent";
-import CounterProvider from "./components/CounterContext";
+
+import NewComp from "./components/NewComp";
+
 
 function App() {
   return (
     <div>
-      <CounterProvider>
-        <CounterComponent></CounterComponent>
-      </CounterProvider>
+      <CounterComponent/>
+       <NewComp/>
+ 
     </div>
   );
 }

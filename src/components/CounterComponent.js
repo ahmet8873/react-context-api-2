@@ -1,13 +1,10 @@
 
-import { useCounter,useIncrease,useDecrease } from './CounterContext'
+import { useGlobalContext} from './Context'
 
 const CounterComponent = () => {
 
   
-  const increase=useIncrease()
-  const counter=useCounter()
-  const decrease =useDecrease()
-
+  const {increase,decrease,counter}=useGlobalContext()
 
   const counterStyles={
     backgroundColor:'#333',
